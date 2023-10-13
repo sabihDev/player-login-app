@@ -18,7 +18,8 @@ input{
 }
 
 .danger{
-    color: rgb(251, 3, 44);  
+    color: rgb(251, 3, 44);
+    text-decoration: none;  
 }
 
 .link{
