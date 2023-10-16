@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 mongoose.connect("mongodb+srv://8203sabirahman:sabi11.333@playerapp.obw1rju.mongodb.net/")
   .then(() => {
     console.log('mongoose connected');

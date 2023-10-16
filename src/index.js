@@ -1,8 +1,11 @@
 const express = require("express");
+// const firebase = require('firebase');
 const path = require("path");
 const mongoose = require("mongoose");
 const app = express();
 const hbs = require("hbs");
+
+
 
 const LogInCollection = require("./mongodb"); // Verify the path
 
