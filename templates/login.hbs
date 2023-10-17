@@ -10,9 +10,11 @@
 <body>
     <h1>Login Form</h1>
 
-    {{#if error}}
-        <p class="error">{{{error}}}</p>
-    {{/if}}
+    <div class="error">
+        {{#if error}}
+            <p class="error">{{{error}}}</p>
+        {{/if}}
+    </div>
 
 
     <form action="/login" method="post" >
