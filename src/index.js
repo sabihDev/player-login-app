@@ -7,7 +7,7 @@ const hbs = require("hbs");
 
 const LogInCollection = require("./mongodb"); // Verify the path
 
-const port = "https://pink-enchanting-snapper.cyclic.app";
+const port = process.env.PORT || 3000;
 
 mongoose.connect("mongodb+srv://8203sabirahman:sabi11.333@playerapp.obw1rju.mongodb.net/", {
     useNewUrlParser: true,
