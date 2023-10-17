@@ -5,13 +5,10 @@ const mongoose = require("mongoose");
 const app = express();
 const hbs = require("hbs");
 
-
-
 const LogInCollection = require("./mongodb"); // Verify the path
 
 const port = process.env.PORT || 3000;
 
-// Connect to MongoDB using Mongoose
 mongoose.connect("mongodb+srv://8203sabirahman:sabi11.333@playerapp.obw1rju.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true
