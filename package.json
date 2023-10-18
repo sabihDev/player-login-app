@@ -22,8 +22,13 @@
     "hbs": "^4.2.0",
     "mongodb": "^6.1.0",
     "mongoose": "^7.6.1",
+    "ndjson": "^2.0.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+    "request": "^2.88.2",
+    "sentiment": "^5.0.2",
+    "through2": "^4.0.2",
+    "through2-filter": "^3.0.0",
     "universal-analytics": "^0.5.3"
   },
   "devDependencies": {
