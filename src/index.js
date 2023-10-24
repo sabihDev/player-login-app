@@ -1,9 +1,17 @@
 const express = require("express");
-// const firebase = require('firebase');
+var Mixpanel = require('mixpanel');
+var mixpanel = Mixpanel.init('c11d60db15512d9ada07560d60890f3b');
 const path = require("path");
 const mongoose = require("mongoose");
 const app = express();
 const hbs = require("hbs");
+
+// mixpanel.init(
+//     "e73a4d23e6c811ec770a2e8023a7e489",
+//     {
+//         host: "https://pink-enchanting-snapper.cyclic.app",
+//     },
+// );
 
 const LogInCollection = require("./mongodb"); // Verify the path
 
@@ -33,6 +41,7 @@ app.get('/signup', (req, res) => {
 });
 
 app.get('/', (req, res) => {
+    mixpanel.track('Viewed Homepage');
     res.render('login');
 });
 
