@@ -1,33 +1,43 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/login.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/login.css" />
+    <meta name="description" content="This site is for testing" />
+    <meta name="keywords" content="player login app" />
+    <meta
+      name="title"
+      content="player login app playerloginapp playerloginapp.login"
+    />
+  </head>
+  <body>
     <h1>Login Form</h1>
 
     <div class="error">
-        {{#if error}}
-            <p class="error">{{{error}}}</p>
-        {{/if}}
+      {{#if error}}
+        <p class="error">{{{error}}}</p>
+      {{/if}}
     </div>
 
+    <form action="/login" method="post">
+      <input class="input" placeholder="Name" name="name" type="text" />
+      <br />
+      <input
+        class="input"
+        placeholder="Password"
+        name="password"
+        type="password"
+      />
+      <br />
+      <input class="sub" type="submit" />
+      <h3 class="danger">Dont have an account ?
+        <a class="link" href="/signup">Create a new account</a></h3>
 
-    <form action="/login" method="post" >
-        <input class="input" placeholder="Name" name="name" type="text">
-        <br>
-        <input class="input" placeholder="Password" name="password" type="password">
-        <br>
-        <input class="sub" type="submit">
-        <h3 class="danger">Dont have an account ? <a class="link" href="/signup">Create a new account</a></h3>
-        
     </form>
 
     <a href="/forgot" class="danger">Forgot Password</a>
-    
-</body>
+
+  </body>
 </html>
